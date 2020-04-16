@@ -1,1 +1,0 @@
-# pluykan.github.io
