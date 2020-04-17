@@ -22,6 +22,21 @@ body,
     height: 80px;
     margin-top: -80px;
   }
+  .title {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 4em;  
+    transform: translate(-50%, -50%);
+  }
+  .main{
+      color: lightblue;
+      font-size: 50px;
+      font-weight: 900;
+      font-family: "NFS",sans-serif;
+  }
 .container {
     background-color: transparent !important;
     margin: 0;
@@ -77,3 +92,9 @@ img {
     bottom: 0;
     text-align: end;
 }
+@font-face {
+    font-family: "NFS";
+    src: url("17642.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
