@@ -31,13 +31,17 @@ body,
     top: 4em;  
     transform: translate(-50%, -50%);
   }
-  .main{
+  p{
+      animation-duration: 3s;
+      animation-name: slidein;
       color: lightblue;
       font-size: 50px;
-      font-weight: 900;
+      font-weight: 800;
       font-family: "NFS",sans-serif;
   }
 .container {
+    animation-duration: 3s;
+      animation-name: slidein;
     background-color: transparent !important;
     margin: 0;
     position: absolute;               
@@ -98,3 +102,14 @@ img {
     font-style: normal; 
     font-weight: normal; 
 } 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
