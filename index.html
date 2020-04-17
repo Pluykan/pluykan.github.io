@@ -8,8 +8,14 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="HelveticaNeue.ttf">
         <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
+        
     </head>
     <body>
+        <div id="preloader_malc">
+            Подождите идет загрузка...
+        </div>
+        
+        
         <div class="wrapper">
 
             <div class="background">
@@ -19,7 +25,7 @@
         
         </div>
         <div class="title">
-            <p>Something Good</p>
+            <p class="p1">Something Good</p>
         </div>
         <div class="container">
             <img src="photo_2020-04-16_22-47-22.jpg" alt="">
@@ -27,7 +33,50 @@
             <a class="button-reply btn" href="#">enter</a>
         </div> 
         <div>
-            <span class="production">Powered by ©Selvaniya</span>
-        </div>       
+            <p class="production">Powered by ©Selvaniya</p>
+        </div>
+        <style type="text/css">
+            #preloader_malc {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, .6);
+                z-index: 999999
+            }
+            #preloader_malc div {
+                background: #fff;
+                width: 260px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 8px;
+                font-family: arial;
+                font-size: 15px;
+                color: #111;
+                text-align: center;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+                position: fixed;
+                z-index: 999;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto
+	        }
+        </style>
+        <script type="text/javascript">
+
+            window.onload = function() {
+        
+                setTimeout(function() {
+        
+                    document.getElementById("preloader_malc").style.display = "none";
+        
+                }, 400);
+        
+            };
+        
+        </script>   
     </body>
 </html>
