@@ -1,8 +1,25 @@
 * {
     box-sizing: border-box;
-    background: #000 url(image_862104170044554418999.gif);
+    margin: 0;
+    padding: 0;
 }
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+.background {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 90px;
+    background-image: url(image_862104170044554418999.gif);
+}
+.footer {
+    height: 80px;
+    margin-top: -80px;
+  }
 .container {
+    background-color: inherit !important;
     margin: 0;
     position: absolute;               
     top: 50%;                         
@@ -10,13 +27,13 @@
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color:transparent;
 }
 .btn { 
-    
     display: block;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: lightblue;
     border-color: transparent;
     border: none;
     font-family: "HelveticaNeue","Helvetica Neue",sans-serif;
@@ -34,6 +51,7 @@
     font-weight: 900;
     line-height: 1.2;
     text-transform: uppercase;
+    color: lightblue;
 }
 button, 
 button:active, 
@@ -51,6 +69,7 @@ img {
     font-weight: 900;
     line-height: 1.2;
     margin: 0;
+    color: lightblue;
     position: fixed;               
     bottom: 0;                    
     left: 4%;
