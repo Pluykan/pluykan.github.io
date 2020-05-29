@@ -12,12 +12,8 @@
     </head>
     <body>
         <div class="wrapper">
-
-            <div class="background">
-            </div>
-        
+            <div class="background"></div>
             <div class="footer"></div>
-        
         </div>
         <div class="title">
             <p class="p1" href="#">Something Good</p>
@@ -51,13 +47,10 @@
             <p class="production">Powered by ©Selvaniya</p>
         </div>
         <script language="JavaScript" type="text/javascript">
-            // var imgs = ["photo_2020-04-16_22-47-22.jpg", "fa74f4628acca51e0f1619489516eeb6.jpg", "photo_2020-04-27_19-28-00.jpg"];  // массив названий граф-файлов
-            // img.src = "./" + imgs[1 + Math.round(Math.random() * 3)];
-            // // document.getElementById("image").src = "./photo_2020-04-16_22-47-22.jpg";
             function rand_background() {
-             var img = ["./photo_2020-04-16_22-47-22.jpg", "./photo_2020-04-27_19-28-00.jpg"];  // массив названий граф-файлов
-             var inx = Math.floor(Math.random()*img.length);  
-             document.getElementById("image").src = img[inx];
+                var img = ["./photo_2020-04-16_22-47-22.jpg", "./photo_2020-04-27_19-28-00.jpg"];  // массив названий граф-файлов
+                var inx = Math.floor(Math.random()*img.length);  
+                document.getElementById("image").src = img[inx];
             }
             rand_background();
         </script>
