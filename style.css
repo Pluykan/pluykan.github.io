@@ -39,7 +39,7 @@ body,
       
     margin: 0;
   }
-  .p1:active {
+  .p1:hover {
     content: '';
     position: absolute;
     height: 2px;
