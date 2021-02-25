@@ -1,3 +1,12 @@
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+
+
 $(document).ready(function() {
     $('#slides').superslides({
         animation: 'slide',
@@ -60,6 +69,16 @@ $(document).ready(function() {
 		}
       });
       
+      $(window).on('load', function () {
+		$(".items").isotope({
+			filter: '*',
+			animationOptions: {
+				duration: 1500,
+				easing: 'linear',
+				queue: false
+			}
+		});
+	});
 
 
 
